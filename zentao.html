@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>禅道</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div id="mainHeader" class="clearfix">
+        <div id="companyTitle"><h4 title="北京蓝色光标数据科技股份有限公司">北京蓝色光标数据科技股份有限公司</h4></div>
+        <div id="mainMenu" class="clearfix">
+            <ul>
+                <li><a class="active">我的地盘</a></li>
+                <li><a>产品</a></li>
+                <li><a>项目</a></li>
+                <li><a>测试</a></li>
+                <li class="divider"></li>
+                <li><a>代码</a></li>
+                <li><a>文档</a></li>
+                <li><a>统计</a></li>
+                <li class="divider"></li>
+                <li><a>组织</a></li>
+            </ul>
+        </div>
+        <div id="searchSection">
+            <input type="search" name="search"><a href="#">GO!</a>
+        </div>
+        <div id="infoSection">
+            <!--<div id="infoBtnWrap">-->
+            <a href="#" id="infoBtn" class="position-relative infoBtn">
+                <span>史文静</span>
+                <span class="caret-down"></span>
+            </a>
+            <!--</div>-->
+            <div id="infoMenu">
+                <ul>
+                    <li>
+                        <a href="#" class="userTitle">
+                            <div class="circle">S</div>
+                            <div id="userTitle" class="clearfix">
+                                <div class="textSize16">史文静</div>
+                                <div class="colorGray">研发</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dividerLine"></li>
+                    <li><a href="#">个人档案</a></li>
+                    <li><a href="#">更改密码</a></li>
+                    <li class="dividerLine"></li>
+                    <li class="position-relative" id="themeBtn">
+                        <a href="#" class="position-relative">主题<span class="caret-right"></span></a>
+                        <ul id="themeMenu">
+                            <li><a href="#" class="choose">禅道蓝（默认）</a></li>
+                            <li><a href="#">叶兰绿</a></li>
+                            <li><a href="#">赤诚红</a></li>
+                            <li><a href="#">玉烟紫</a></li>
+                            <li><a href="#">芙蕖粉</a></li>
+                            <li><a href="#">露莓黑</a></li>
+                            <li><a href="#">经典蓝</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="position-relative">Language<span class="caret-right"></span></a></li>
+                    <li><a href="#">自定义导航</a></li>
+                    <li class="dividerLine"></li>
+                    <li><a href="#" class="position-relative">帮助<span class="caret-right"></span></a></li>
+                    <li><a href="#">关于禅道</a></li>
+                    <li class="dividerLine"></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="detailHeader">
+        <div id="detailMenu" class="clearfix">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li class="dropdown" id="dateTimeBtn">
+                    <a href="#" >
+                        日程
+                        <span class="caret-down"></span>
+                    </a>
+                    <ul class="dropdownMenu clearfix">
+                        <li><a href="#">待办</a></li>
+                        <li><a href="#">日志</a></li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">任务</a></li>
+                <li><a href="#">Bug</a></li>
+                <li><a href="#">测试</a></li>
+                <li><a href="#">需求</a></li>
+                <li class="divider"></li>
+                <li><a href="#">项目</a></li>
+                <li><a href="#">动态</a></li>
+                <li class="divider"></li>
+                <li><a href="#">档案</a></li>
+                <li><a href="#">密码</a></li>
+                <li><a href="#">联系人</a></li>
+            </ul>
+        </div>
+        <div id="blockSection">
+                <div id="blockSectionInfo">区块<span class="caret-down"></span></div>
+                <ul id="blockSectionMenu">
+                    <li><a href="#">添加区块</a></li>
+                    <li><a href="#">恢复默认</a></li>
+                </ul>
+        </div>
+    </div>
+    <div id="container" class="clearfix">
+        <div id="leftSection">
+            <div class="panel-left">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">指派给我的Bug</div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li><a href="#" title="更多">MORE</a></li>
+                            <li class="position-relative">
+                                <a href="#" class="icon-panel-control" id="panelBugBtn"></a>
+                                <ul class="panel-dropdown" id="panelBugMenu">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-bug">暂无信息</div>
+            </div>
+
+            <div class="panel-left">
+                <div class="panel-header clearfix">
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li class="position-relative">
+                                <a href="#" class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-total-work clearfix">
+                    <div class="panel-total-left">
+                        <span class="txt-control-head">史文静，早上好！</span>
+                        <ul class="timeline position-relative">
+                            <li><a href="#" class="position-relative timeline-before timeline-after">1. 创建账号</a></li>
+                            <li><a href="#" class="position-relative timeline-before timeline-after">2. 创建产品</a></li>
+                            <li><a href="#" class="position-relative timeline-before">3. 创建需求</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-total-right clearfix">
+                        <h4>
+                            <span class="text-muted">2019年08月02日</span>
+                            今天剩余工作总计
+                        </h4>
+                        <div class="tile">
+                            <div class="tile-title">我的任务</div>
+                            <div class="tile-amount">0</div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-title">我的BUG</div>
+                            <div class="tile-amount">1</div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-title">我的需求</div>
+                            <div class="tile-amount">3</div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-title">进行中的项目</div>
+                            <div class="tile-amount">15</div>
+                            <div class="tile-info"><span>已延期 4</span></div>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-title">未关闭的产品</div>
+                            <div class="tile-amount">24</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-left">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">流程图</div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li class="position-relative">
+                                <a href="#" class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-chart">
+                    <!--<div class="panel-chart-row">-->
+                        <ul class="clearfix">
+                            <li><a href="#" class="col-1">管理员</a></li>
+                            <li><a href="#" class="col-2">维护公司</a></li>
+                            <li><a href="#" class="col-3">添加用户</a></li>
+                            <li><a href="#" class="col-4">维护权限</a></li>
+                        </ul>
+                    <!--</div>-->
+                    <!--<div class="panel-chart-row">-->
+                        <ul class="clearfix">
+                            <li><a href="#" class="col-1">产品经理</a></li>
+                            <li><a href="#" class="col-2">创建产品</a></li>
+                            <li><a href="#" class="col-3">维护模块</a></li>
+                            <li><a href="#" class="col-4">维护计划</a></li>
+                            <li><a href="#" class="col-5">维护需求</a></li>
+                            <li><a href="#" class="col-6">创建发布</a></li>
+                        </ul>
+                    <!--</div>-->
+                    <!--<div class="panel-chart-row">-->
+                        <ul class="clearfix">
+                            <li><a href="#" class="col-1">项目经理</a></li>
+                            <li><a href="#" class="col-2">创建项目</a></li>
+                            <li><a href="#" class="col-3">维护团队</a></li>
+                            <li><a href="#" class="col-4">关联产品</a></li>
+                            <li><a href="#" class="col-5">关联需求</a></li>
+                            <li><a href="#" class="col-6">分解任务</a></li>
+                        </ul>
+                    <!--</div>-->
+                    <!--<div class="panel-chart-row">-->
+                        <ul class="clearfix">
+                            <li><a href="#" class="col-1">研发人员</a></li>
+                            <li><a href="#" class="col-2">领取任务和Bug</a></li>
+                            <li><a href="#" class="col-3">更新状态</a></li>
+                            <li><a href="#" class="col-4">完成任务和Bug</a></li>
+                        </ul>
+                    <!--</div>-->
+                    <!--<div class="panel-chart-row">-->
+                        <ul class="clearfix">
+                            <li><a href="#" class="col-1">测试人员</a></li>
+                            <li><a href="#" class="col-2">撰写用例</a></li>
+                            <li><a href="#" class="col-3">执行用例</a></li>
+                            <li><a href="#" class="col-4">提交Bug</a></li>
+                            <li><a href="#" class="col-5">验证Bug</a></li>
+                            <li><a href="#" class="col-6">关闭Bug</a></li>
+                        </ul>
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="panel-left">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">项目统计</div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li class="position-relative">
+                                <a class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-bug">暂无信息</div>
+            </div>
+
+            <div class="panel-left">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">产品统计</div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li class="position-relative">
+                                <a class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-bug">暂无信息</div>
+            </div>
+
+        </div>
+        <div id="rightSection">
+
+            <div class="panel-right">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">指派给我</div>
+                    <div class="panel-change-btn">
+                        <ul class="clearfix">
+                            <li><a href="#" class="active">我的待办</a></li>
+                            <li><a href="#">我的任务</a></li>
+                            <li><a href="#">我的Bug</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li class="position-relative">
+                                <a href="#" class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-to-me">
+                    <input type="text" name="addTodo" placeholder="点击添加待办" class="addTodo">
+                </div>
+            </div>
+
+            <div class="panel-right">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">最新动态</div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li><a href="#" title="更多">MORE</a></li>
+                            <li class="position-relative">
+                                <a href="#" class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-latest-news">
+                    <ul>
+                        <li class="clearfix active">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="timeline-tag">8月02日 14:57</span>
+                            <span class="timeline-text">
+                                张永军 <em>编辑了</em> 需求 <a href="#" title="SOPO客户评级列表，点击调整时增加判断该评级状态的校验">SOPO客户评级列表，点击调整时增加判断该评级状态的校验</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel-right">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">项目总览</div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li class="position-relative">
+                                <a href="#" class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-bug">暂无信息</div>
+            </div>
+
+            <div class="panel-right">
+                <div class="panel-header clearfix">
+                    <div class="panel-title">产品总览</div>
+                    <div class="panel-nav">
+                        <ul class="clearfix">
+                            <li class="position-relative">
+                                <a class="icon-panel-control"></a>
+                                <ul class="panel-dropdown">
+                                    <li><a href="#">刷新</a></li>
+                                    <li><a href="#">编辑</a></li>
+                                    <li><a href="#">移除</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="panel-product-all clearfix">-->
+                    <!--<div class="all">-->
+                        <!--<div class="txt">所有产品</div>-->
+                        <!--<div class="amount-all"><strong>24</strong></div>-->
+                    <!--</div>-->
+                    <!--<div class="amount">-->
+                        <!--<ul>-->
+                            <!--<li><span>正常</span><strong>24</strong></li>-->
+                            <!--<li><span>结束</span><strong>0</strong></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <canvas  id="planProgress" width="100px" height="100px" style="border:1px solid #d3d3d3;"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
